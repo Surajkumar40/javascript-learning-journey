@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    .bg-Black{
+        background-color: #212121;
+        color:#fff;
+    }
+</style>
+<body>
+    <div class="bg-Black">
+        <h1 id="Title" class="heading">Dom - Learning <span style="display: none;">Test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dr sit.</h2>
+        <h2>Lorem um dolor sit.</h2>
+        <p>Lorem ipsum dolor </p>
+        <input type="password" bame="" id="">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+    <script>
+    // console.log(window)        
+    // console.log(document)        
+    // console.dir(document) // to get all the details 
+    // console.log(document.baseURI);
+    // console.log(document.links[2]);
+    // console.log(document.getElementById('Title'));
+    // console.log(document.getElementById('Title').innerHTMl = "<h1>Chai aur Code</h1>");//run in console
+    // console.log(document.getElementById('Title'));
+    // console.log(document.getElementById('Title').id);
+    // console.log(document.getElementById('Title').class);// not print class 
+    // console.log(document.getElementById('Title').className);
+    // console.log(document.getElementById('Title').getAttribute);
+    // console.log(document.getElementById('Title').getAttribute('class'));
+    // console.log(document.getElementById('Title').getAttribute('id'));
+    // console.log(document.getElementById('Title').setAttribute('id','set heading'));//we can set id and class multiple or one
+    const newVar =  document.getElementById('Title');
+    // newVar;
+    // newVar.style.backgroundColor='green';// we can set styling with this
+    //  newVar.style.padding='30px';
+    //  newVar.style.borderRadius='25px';
+    // console.log(newVar.textContent)//it shows all text+hidden text also
+    // console.log(newVar.innerHTML)//it show all text and  inner html also
+    // console.log(newVar.innerText)//it show only visival content
+    // console.log(document.querySelector('#Title'));
+    // console.log(document.querySelector('.heading'))
+    // console.log(document.querySelector('input[type="password"]'));// we can select any selector with this queryselector
+    
+    // console.log(document.querySelector('h2'));//it shows first element of you search
+    // console.log(document.querySelectorAll('h2'));//it shows all element of you search
+    // console.log(document.querySelectorAll('li'))
+    const templiList =document.querySelectorAll('li')
+    // console.log(templiList);
+    // templiList[0].style.color='green'
+    // templiList.forEach(function (l){
+    //     l.style.backgroundColor='green'
+    // })
+//    console.log(document.getElementsByClassName('list-item'))
+  const tempClassList = document.getElementsByClassName('list-item')
+//   console.log(tempClassList)
+  const tempClassListTOArray =Array.from(tempClassList)
+  //console.log(tempClassListTOArray);
+  tempClassListTOArray.forEach(function(Li){
+    Li.style.color='orange'
+  })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="learningmaterial"><a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/XMLHttpRequest">learn this and its instances</a></div>
+
+    
+</body>
+<script>
+    const requesturl = 'https://api.github.com/users/surajkumar40'
+   const xhr = new XMLHttpRequest();
+   xhr.open('GET',requesturl)
+   xhr.onreadystatechange = function (){
+       console.log(xhr.readyState);
+       if(xhr.readyState === 4){
+        const data = JSON.parse(this.responseText)
+        console.log(this.responseText);
+
+        // console.log(typeof data);
+        // console.log(data.followers)
+       }
+   }
+   xhr.send();
+</script>
+</html>

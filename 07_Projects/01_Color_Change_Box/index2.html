@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="btn">Click me to change color</h1>
+
+</body>
+<script>
+    const btn = document.getElementById('btn');
+    // const hex = '#';
+    const allNum = '123456789ABCDE';
+    let result = "#";
+    function callNum(length) {
+
+
+        for (let i = 0; i < length; i++) {
+
+            let resultColor = allNum.charAt(Math.floor(Math.random() * allNum.length));
+
+            result += resultColor;
+            setTimeout(callNum, 2000);
+        }
+        console.log(result);
+
+    }
+    // callNum(6);
+    //    console.log(result);
+     const eventColor = btn.addEventListener('click', (ev) => {
+
+        btn.style.backgroundColor = result
+    })
+ setInterval(callNum(6),1000);
+onclick(btn,callNum())
+    console.log("Hyy");
+
+</script>
+
+</html>
