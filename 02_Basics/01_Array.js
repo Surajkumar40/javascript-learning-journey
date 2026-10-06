@@ -15,8 +15,8 @@ myarr.shift()//to delete from starting
 // console.log(myarr.indexOf(2));
 
 const newstringarr =myarr.join()// it show in string type
-// console.log(newstringarr);
-// console.log(typeof newstringarr);
+console.log(newstringarr);
+console.log(typeof newstringarr);
 
 console.log('A',myarr)
 const arrn1 = myarr.slice(1,3)//it not include last index value and original array remains same

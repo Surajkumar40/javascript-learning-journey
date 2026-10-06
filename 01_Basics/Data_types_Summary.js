@@ -44,6 +44,6 @@ let myFunction =  {
 }
 let anotherfunction = myFunction
 anotherfunction = "Newgoogledotcomm"
-// console.log(myFunction);
-// console.log(anotherfunction);
+console.log(myFunction);
+console.log(anotherfunction);
 

@@ -7,7 +7,7 @@
 // console.log(typeof score);
 // // console.log(typeof (score));
 // console.log(score);
-let IsNumber = Number(score)
+// let IsNumber = Number(score)
 // console.log(typeof IsNumber);
 // console.log(IsNumber);
 
@@ -30,26 +30,30 @@ let IsNumber = Number(score)
 
 /*********************Operatiions******************/
 
-let str1 = "hyy"
-let str2 = " Suraj"
-let str3 = str1 + str2
+// let str1 = "hyy"
+// let str2 = " Suraj"
+// let str3 = str1 + str2
 // console.log(str3);
 
 let value = 3
-let negvalue = -value //neagative value
+let negvalue = -value //negative value
+// console.log(negvalue)
 
 // console.log(2 + 3);
 // console.log(2 - 3);
 // console.log(2 / 3);
 // console.log(2 * 3);
 // console.log(2 ** 3);
-// console.log(2 % 3);
+console.log(2 % 3);
 
 // console.log(2 + "2");
 // console.log("2"+ 2);
 // console.log("2" + "2");
-// console.log(2 + 2 +"2");
-// console.log("2"+2 + 2 );
+console.log(2 + 2 +"2");
+console.log("2"+2 + 2 );
+console.log(2+"2"+2);
+
  
-// console.log(+true);
-// console.log(-"");
+console.log(+true);
+console.log(-true);
+console.log(+"");
